@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineShopping - Cart &amp; Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-dot"></span>OnlineShopping</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html" class="active">Cart <span id="cart-count">(0)</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2 style="margin-bottom: 20px;">Shopping Cart</h2>
+
+            <div id="empty-cart" style="display: none; text-align: center; padding: 36px 0;">
+                <p style="color: var(--text-muted); margin-bottom: 16px;">Your shopping cart is empty.</p>
+                <a href="products.html" class="btn btn-emerald">Browse Products</a>
+            </div>
+
+            <div id="filled-cart">
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body"></tbody>
+                    </table>
+                </div>
+
+                <div class="cart-bottom-grid">
+                    <form onsubmit="handleOrderSubmit(event)">
+                        <h3 style="margin-bottom: 14px; font-size: 17px;">Delivery &amp; Payment Details</h3>
+                        <div class="form-group">
+                            <label for="cust-name">Full Name</label>
+                            <input type="text" id="cust-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cust-address">Shipping Address</label>
+                            <textarea id="cust-address" rows="3" placeholder="House No., Street, City, PIN Code" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pay-method">Payment Mode</label>
+                            <select id="pay-method" required>
+                                <option value="UPI (GPay / PhonePe / Paytm)">UPI (GPay / PhonePe / Paytm)</option>
+                                <option value="Credit / Debit Card">Credit / Debit Card</option>
+                                <option value="Net Banking">Net Banking</option>
+                                <option value="Cash on Delivery (COD)">Cash on Delivery (COD)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-emerald btn-block">Place Order</button>
+                    </form>
+
+                    <div>
+                        <h3 style="margin-bottom: 14px; font-size: 17px;">Order Summary</h3>
+                        <div class="summary-box">
+                            <div class="summary-row"><span>Subtotal:</span><strong id="subtotal-val">₹0</strong></div>
+                            <div class="summary-row"><span>GST (18%):</span><strong id="gst-val">₹0</strong></div>
+                            <div class="summary-row summary-total">
+                                <span>Grand Total:</span>
+                                <span id="total-val" style="color: var(--emerald-text);">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="order-receipt" style="display: none;"></div>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 OnlineShopping Portal</footer>
+    <script src="script.js"></script>
+</body>
+</html>

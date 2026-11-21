@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+    <product id="P101">
+        <name>Wireless Noise-Cancelling Headphones</name>
+        <category>Electronics</category>
+        <price>4999</price>
+        <description>Over-ear Bluetooth 5.3 headphones with 40-hour battery life and active noise cancellation.</description>
+        <image>https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&amp;q=80</image>
+    </product>
+    <product id="P102">
+        <name>Minimalist Smart Watch</name>
+        <category>Wearables</category>
+        <price>3499</price>
+        <description>AMOLED display fitness tracker with heart rate monitor, SpO2 sensor, and 10-day standby.</description>
+        <image>https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&amp;q=80</image>
+    </product>
+    <product id="P103">
+        <name>Mechanical Gaming Keyboard</name>
+        <category>Accessories</category>
+        <price>2799</price>
+        <description>Compact 75% tactile mechanical keyboard with customizable RGB backlighting and braided USB-C cable.</description>
+        <image>https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&amp;q=80</image>
+    </product>
+    <product id="P104">
+        <name>Ergonomic Laptop Stand</name>
+        <category>Accessories</category>
+        <price>1299</price>
+        <description>Adjustable anodized aluminum stand suitable for 11-inch to 17-inch laptops.</description>
+        <image>https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&amp;q=80</image>
+    </product>
+    <product id="P105">
+        <name>Portable Bluetooth Speaker</name>
+        <category>Electronics</category>
+        <price>1999</price>
+        <description>IPX7 waterproof 20W stereo speaker with deep bass and dual-pairing support.</description>
+        <image>https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&amp;q=80</image>
+    </product>
+    <product id="P106">
+        <name>Classic Leather Backpack</name>
+        <category>Lifestyle</category>
+        <price>2499</price>
+        <description>Water-resistant vegan leather backpack with padded 16-inch laptop compartment.</description>
+        <image>https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&amp;q=80</image>
+    </product>
+</store>
